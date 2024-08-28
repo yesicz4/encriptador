@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #00E5E8;
+    background-image: url(imagenes/red-purple.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo{
+    padding-top: 50px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.ventanas{
+    display: flex;
+}
+
+.ventana__1{
+    width: 583.51px;
+    height: 561.04px;
+    margin-left: 230px;
+    margin-top: 35px;
+}
+
+.ventana__2{
+    width: 344.84px;
+    height: 698.2px;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+
+.texto{
+    position: absolute;
+    width: 31%;
+    height: 54%;
+    left: 18%;
+    top: 15%;
+    border: none;
+    font-family: "Irish Grover";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #1b1464;
+    line-height: 150%;
+    text-transform: lowercase;
+}
+
+.texto::placeholder {
+    color: #1b1464;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width:80%;
+    left: 22%;
+    top: 83%;
+}
+
+.informacion p{
+    display: flex;
+    background-color: #00E5E8;
+    border-radius: 12px;
+    font-family:"Irish Grover";
+    font-style: normal;
+    text-align: center; 
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #1b1464;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 60%;
+    left: 18%;
+    top: 87%;
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #af2bbf;
+    border-radius: 24px;
+    border: 2px solid #1b1464;
+    font-family: "Irish Grover";
+    font-size: 1.875rem;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 5px 8px 12px black;
+    margin-right: 10px;
+}
+
+.btn-desencriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #b2abf2;
+    border-radius: 24px;
+    border: 2px solid #1b1464;
+    font-family: "Irish Grover";
+    font-size: 1.875rem;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 5px 8px 12px black;
+    margin-left: 10px;
+
+}
+
+.btn-desencriptar:hover{
+    background-color: #8A84BD;
+}
+
+.btn-encriptar:hover{
+    background-color: #80228b;
+}
+
+.encriptado{
+display: flex;
+justify-content: center;
+position: absolute;
+width: 29%;
+height: 90%;
+left: 57%;
+top: 5%;
+}
+
+.copiar{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    gap: 8px;
+    width: 35%;
+    background-color: #00E5E8;
+    border: 2px solid #1b1464;
+    border-radius: 24px;
+    font-family: "Irish Grover";
+    font-size: 1.875rem;
+    line-height: 19px;
+    text-align: center;
+    color: #1b1464;
+    margin-top: 570px;
+}
+
+.copiar:hover{
+    background-color: #03A4A7;
+}
+
+.mensaje__encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    width: 80%;
+    top: 60%;
+    text-align: center;
+}
+
+.mensaje__encriptado h2{
+    width: 60%;
+    font-family:"Irish Grover";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: center;
+    color: #1b1464;
+    margin-top: 80%;
+}
+
+.mensaje__encriptado p{
+width: 50%;
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 1.25rem;
+line-height: 150%;
+text-align: center;
+color: #1b1464;
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    width: 20%;
+    background-color: #00E5E8;
+    color:#1b1464;
+    font-family: "Irish Grover";
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 61%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 1%;
+}
+@media (max-width: 1200px){
+
+    
+    header .logo{
+        width: 20%;
+        padding: 4px;
+        margin-top: 10px;
+    }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+ .encriptar{
+    margin: 168px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+ .texto{
+    width: 75%;
+    height: 25%;
+    left: 10%;
+    top: 30%;
+    font-size: 1.5rem;
+}
+.informacion{
+    width: 80%;
+    left: 18%;
+    top: 65%;
+}
+.informacion p{
+    font-size: 1rem;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70%;
+}
+
+.btn-encriptar{
+    margin-left: 8%;
+    width: 130%;
+    padding: 8%
+}
+
+.btn-desencriptar{
+    margin-top: 3%;
+    width: 130%;
+    padding: 8%
+}
+.encriptado{
+    width: 90%;
+    height: 30%;
+    left: 5%;
+    top: 90% ;
+    background: #ffffff;
+    border-radius: 24%;
+}
+.mensaje__encriptado {
+    width: 100%;
+    top: 5%;
+
+}
+.mensaje__encriptado h2{
+margin-top: 10%;
+}
+
+.encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.ventana__1{
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+}
+
+.ventana__2{
+    top: 0%;
+    display: none;
+    visibility: hidden;
+}
+
+.copiar{
+    visibility: hidden;
+}
+
+.footer{
+    width: 80%;
+    margin-top: 50%;
+    margin-left: 8%;
+    padding: 1%;
+}

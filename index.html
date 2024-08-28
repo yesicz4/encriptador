@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <title>Encriptador by Yesi</title>
+    <link rel="shortcut icon" href="./imagenes/logo.png " type="image/x-icon">
+</head>
+<body>
+    <header><img class="logo" src="./imagenes/logo-alura.png" alt="logo de Alura">
+    </header>
+<main>
+    <div class="container">
+        <div class="ventanas">
+            <img class="ventana__1" src="./imagenes/ventana-1.png" alt="Imagen de una ventana">
+            <img class="ventana__2" src="./imagenes/ventana-2.png" alt="Imagen de una ventana">
+        </div>
+        <div class="encriptar">
+            <textarea
+            name="texto"
+            class="texto"
+            id="texto"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui">
+            </textarea>
+
+          <div class="informacion">
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">
+                Encriptar
+            </button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">
+                Desencriptar
+            </button>
+          </div>
+        </div>
+
+      <div class="encriptado">
+       <img src="./imagenes/gatito.png" alt="Imagen gatito" id="gatito">
+      <div class="mensaje__encriptado" id="mensaje-encriptado">
+       <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+       <p id=parrafo>Ingresa el texto que desees encriptar o desencriptar.</p>
+       <buttom class="copiar" type="button" onclick="copiar()">Copiar
+       </buttom>
+      </div>
+      </div>
+   </div>
+</main>
+  <footer class="footer">
+    <p>Developed by Yesica Czornenko</p>
+</footer>
+</body>
+<script src="app.js"></script>
+</html>
